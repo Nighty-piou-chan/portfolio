@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="stylesheet" href="./src/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+		<script src="https://use.fontawesome.com/e0360ce757.js"></script>
+	</head>
+	<body onload="menu(), calculette()">
+		
+		<header class="portfolio" id="header">
+			<div class="flex">
+				<div class="logo"><img  class="logo" src="./media/img/logo.png" alt="logo" title="logo"></div>
+				<nav id="menu">
+					<a href="index.html"><span>A</span>ccueil</a>
+					<a href="a-propos.html"><span>À</span> Propos</a>
+					<a href="portfolio.html"><span>P</span>ortfolio</a>
+					<a href="contact.php"><span>C</span>ontact</a>
+				</nav>
+					<nav id="menu-responsive">
+						<span id="burger" class="fa fa-bars fa-2x" aria-hidden="true"></span>
+						<div class="responsive">
+							<a class="list" href="index.html"><span>A</span>ccueil</a>
+							<a class="list" href="a-propos.html"><span>À</span> Propos</a>
+							<a class="list" href="portfolio.html"><span>P</span>ortfolio</a>
+							<a class="list" href="contact.php"><span>C</span>ontact</a>
+						</div>
+					</nav>
+			</div>
+			<div class="title">
+				<h1 class="portfolio">
+					Portfolio
+				</h1>
+			</div>
+			<a href="#" id="bottom" onclick="animateScroll()"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
+
+		</header>
+
+		<section id="galerie" class="galerie">
+			<div class="js">
+				<h3><span>D</span>eveloppement</h3>
+				<div class="presentation">
+					<h4>Projet terminé </h4>
+					<div class="projet-1">
+						<div class="flex-proj">
+							<div class="prez-1">
+								<h5>La calculatrice simple</h5>
+								<p>Calculatrice fait de deux champs de textes. Choix du symbole avec un menu déroulant. Afficher le résultat en appuyant sur le bouton " = ". Les virgules ne sont pas prises en compte, les remplacer pour des " . " pour des chiffres à virgules. Testez-là vous-même, elle fonctionne !</p>
+							</div>
+							<div class="proj-1">
+								<div id="calculatrice" class="calculatrice">
+									<button id="reset">reset</button>
+			<input type="text" name="chiffreun" id="number1">
+			<select id="operateur" name="operateur">
+				<option value="*" class="operateurs">x</option>
+				<option value="/" class="operateurs">/</option>
+				<option value="+" class="operateurs">+</option>
+				<option value="-" class="operateurs">-</option>
+			</select>
+			<input type="text" name="chiffredeux" id="number2">
+			<button id="calculate"> = </button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+				</div>
+				<div class="presentation">
+					<h4>Projet en cours </h4>
+					<div class="projet-2">
+						<div class="flex-proj">
+							<div class="prez-2">
+								<h5>Café à 1€ dans Paris</h5>
+								<p>Localisation de votre emplacement, affichage des cafés à 1€ le plus proche. Affichage des adresses.</p>
+							</div>
+							<div class="proj-2">
+								<img src="./media/img/coffee-project.png" title="projet café" alt="projet café">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="htmlcss">
+				<h3><span>I</span>ntégration</h3>
+				<div class="presentation">
+					<h4>Projet terminé </h4>
+					<div class="projet-1">
+						<div class="flex-proj">
+							<div class="prez-1">
+								<h5>Intégration exercice</h5>
+								<p>A partir d'une maquette déjà existante, l'intégrer en version responsive. Découvrez la version web <a href="http://emiliebadin.esy.es/integration-exercice/" target="_blank">en cliquant là</a>.</p>
+							</div>
+							<div class="proj-1">
+								<img src="./media/img/imac-intexo.png" title="intégration exercice" alt="intégration exercice">
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="presentation">
+						<div class="projet-2">
+							<div class="flex-proj">
+								<div class="prez-2">
+									<h5>Intégration template - MrBel</h5>
+									<p>Intégration du template fourni en psd de Mrbel. Site sans animation ni responsive. Vous pouvez le découvrir <a href="http://emiliebadin.esy.es/mrbel" target="_blank">en cliquant là</a>.</p>
+								</div>
+								<div class="proj-2">
+									<img src="./media/img/mrbel.png" title="intégration template MrBel" alt="intégration template MrBel">
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="presentation">
+						<div class="projet-3">
+							<div class="flex-proj">
+								<div class="prez-3">
+									<h5>Site satellite</h5>
+									<p>
+										Dans le cadre de l'entreprise La Route des Langues, mise en place de sites pouvant améliorer le SEO ainsi que la visibilité du site principal.
+
+										Les sites satellites :
+
+										<ul>
+											<li><a href="http://sejour-linguistique-angleterre.org/" target="_blank">Séjour linguistique Angleterre</a></li>
+											<li><a href="http://www.sejour-linguistique-usa.org/" target="_blank">Séjour linguistique USA</a></li>
+											<li><a href="http://www.sejour-linguistique-irlande.com/" target="_blank">Séjour linguistique Irlande</a></li>
+											<li><a href="http://www.sejour-linguistique-australie.fr/" target="_blank">Séjour linguistique Australie</a></li>
+											<li><a href="http://www.sejour-linguistique-londres.fr/" target="_blank">Séjour linguistique à Londres</a></li>
+											<li><a href="http://www.sejour-linguistique-allemagne.org/" target="_blank">Séjour linguistique Allemagne</a></li>
+											<li><a href="http://sejour-linguistique-immersion.fr/" target="_blank">Séjour linguistique en immersion</a></li>
+											<li><a href="http://www.sejour-linguistique-italie.fr/">Séjour linguistique Italie</a></li>
+											<li><a href="http://www.sejour-linguistique-los-angeles.fr/">Séjour linguistique Los Angeles</a></li>
+											<li><a href="http://www.sejour-linguistique-miami.fr/">Séjour linguistique Miami</a></li>
+											<li><a href="http://www.sejour-linguistique-new-york.fr/">Séjour linguistique New York</a></li>
+											<li><a href="http://summer-camp.fr/"> Séjour en summer camp</a></li>
+											<li><a href="http://www.sejour-immersion.com/test/" target="_blank">Séjour en immersion</a></li>
+										</ul>
+									</p>
+								</div>
+								<div class="proj-3">
+									<img src="./media/img/site-satt.png" title="La route des langues" alt=" La route des langues">
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="presentation">
+						<div class="projet-4">
+							<div class="flex-proj">
+								<div class="prez-4">
+									<h5>Portrait 2.0</h5>
+									<p>Dans le cadre d'un stage en entreprise, ma mission, la refonte du site Portrait 2.0. </p>
+								</div>
+								<div class="proj-4">
+									<img src="./media/img/portrait2point0-mock.png" title="P2.0" alt="P2.0">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="design">
+				<h3><span>W</span>ebdesign</h3>
+				<div class="presentation">
+					<h4>Projet terminé </h4>
+					<div class="projet-1">
+						<div class="flex-proj">
+							<div class="prez-1">
+								<h5>Creathy</h5>
+								<p>A partir d'une structure déjà existante, réaliser le design du site internet sans casser la structure. Vous pouvez la découvrir <a href="http://emiliebadin.esy.es/creathy">en cliquant-là</a>.</p>
+							</div>
+							<div class="proj-1">
+								<img src="./media/img/crea.png" alt="creathy" title="creathy">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="copyright">
+				<p>© Emilie Badin - 2017</p><p> <i class="fa fa-facebook-square" aria-hidden="true"></i></p>
+					
+			</div>
+		</footer>
+				<script type="text/javascript" src="./src/js/app.js"></script>
+	</body>
+</html>

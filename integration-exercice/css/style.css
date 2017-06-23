@@ -1,0 +1,268 @@
+/*****General ****/ 
+
+body, p {
+	margin: 0;
+	padding: 0;
+}
+p, h1, h2, h3, h4, a {
+	font-family: myriad pro
+}
+h1 {
+	font-size: 42px
+}
+h2 {
+	font-size: 32px
+}
+h3 {
+	font-size: 24px
+}
+h4 {
+	font-size: 18px
+}
+h1, h3 {
+	text-align: center;
+}
+button {
+	text-align: center;
+	margin-bottom: 50px;
+	background: linear-gradient(90deg, #55007a, #d1009f);
+	border: none;
+	padding-top : 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 15px 15px;
+	color: #fff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+button a {
+	color: #fff
+}
+
+button:hover {
+	text-align: center;
+	margin-bottom: 50px;
+	background: linear-gradient(90deg, #d1009f, #55007a);
+	border: none;
+	padding-top : 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 15px 15px;
+	color: #fff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: underline;
+}
+
+/********* Header ******/
+
+header {
+	padding-top: 10px;
+	width: 100%;
+	background: linear-gradient(60deg, rgba(209, 0, 159, 0.8), 
+	rgba(85,0,122, 0.8)), url('../img/header-fond.jpg');
+	height: 850px;
+}
+.container {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+.title {
+	width: 70%;
+	margin: auto;
+	margin-top: 300px;
+	color: #fff
+}
+nav a:hover, header p:hover {
+	color: #fff;
+	border-bottom: #fff solid 1px
+}
+a {
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+	margin-left: 5px
+}
+
+/******Description ******/
+
+.describe {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row
+}
+.design p, .code p {
+	width: 45%;
+	margin: 0 auto;
+	color: #fff;
+	padding-bottom: 15px;
+	font-size: 14px
+}
+.design h3, .code h3 {
+	margin: 0 auto;
+	text-align: left;
+	color: #fff;
+	width: 45%;
+}
+.design, .code {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	
+}
+.design {
+	background: url('../img/img1.jpg') no-repeat;
+}
+.code {
+	background: url('../img/img2.jpg') no-repeat;
+}
+/*******Competence ******/
+
+.competence h3 {
+	padding-top: 50px;
+	padding-bottom: 50px
+}
+.competence-1, .competence-2 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 50px
+}
+.webdesign, .digitpaint, .deskapp, .webapp {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 40px;
+	width: 80%;
+	margin: 0 auto;
+}
+.webdesign img, .digitpaint img, .deskapp img, .webapp img {
+	height: 20%;
+	filter: grayscale(100%);
+	margin-right: 10px
+}
+.text-comp {
+	width: 100%
+}
+.text-comp h4 {
+	margin-top: 0;
+}
+/******** Profil ******/
+
+.profil {
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+	url('../img/img3.jpg') no-repeat fixed center;
+}
+.profil h2 {
+	padding-top: 50px;
+	text-align: center;
+}
+.profil p {
+	text-align: center;
+	font-style: italic;
+	padding-bottom: 50px;
+	font-size: 12px;
+}
+.icone {
+	width: 20%;
+	margin: 0 auto
+}
+.icone img {
+	width: 50%;
+	border-radius: 100% 100%;
+	background: #55007a
+}
+.icone p {
+	width: 75%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 25px
+}
+.button {
+	padding-bottom: 50px
+}
+
+/****** MAP *****/
+
+iframe {
+	width: 100%
+}
+footer {
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+footer p {
+	font-size: 14px;
+	color: #a7acbc;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+/******Desktop 1024 *****/
+
+@media (max-width: 1024px) {
+	.webdesign, .digitpaint, .deskapp, .webapp {
+		width: 80%;
+		margin: 0 auto;
+		flex-direction: column;
+	}
+	.webdesign img, .digitpaint img {
+		width: 40%;
+		margin: 0 auto;
+		margin-bottom: 5px
+	}
+	 .deskapp img, .webapp img {
+	 	width: 50%;
+	 	margin: 0 auto;
+	 	margin-bottom: 5px
+	 }
+} 
+
+/***** Tablette portrait ********/
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.competence-1, .competence-2 {
+		width: 100%;
+	}
+	.describe {
+		flex-direction: column
+	}
+	.webdesign, .digitpaint, .deskapp, .webapp {
+			width: 80%;
+			margin: 0 auto;
+			flex-direction: column;
+		}
+		.webdesign img, .digitpaint img, .deskapp img, .webapp img {
+			width: 20%;
+			margin: 0 auto;
+	}
+	.icone {
+		width: 50%
+	}
+}
+
+/********* Phone ********/
+
+@media (max-width: 768px) {
+	.webdesign, .digitpaint, .deskapp, .webapp {
+			width: 100%;
+	}		
+	.icone {
+		width: 100%
+	}
+}

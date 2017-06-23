@@ -1,0 +1,486 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* Reset l’ajout de taille quand padding et bordures*/
+
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px
+  }
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/**** GENERAL *****/
+.row{
+    width: 100%;
+    margin-bottom:50px
+}
+section{
+    position: relative
+}
+.center-content{
+    width:70%;
+    margin:0 auto;
+}
+.main-block{
+    width:100%;
+}
+.part-block{
+     width:100%;
+}
+.flex-box-simple{
+    display: -webkit-flex; 
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.flex-box{
+    display: -webkit-flex; 
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    width: 100%;
+}
+.flex-box-portfolio{
+    display: -webkit-flex; 
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    width: 100%;
+    margin-bottom: 50px
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* position titre */
+.main-title{
+    color:#292929;
+    padding:2%;
+    font-size: 25px;
+ }
+.center-title{
+    text-align: center;
+ }
+.left-title{
+    text-align: left;
+ }
+
+/* titre et paragraphe */
+.main-title h2{
+    text-transform: uppercase;
+ }
+.main-title p{
+    line-height: 2;
+    color:#585555;
+ }
+
+/* bordure */
+.center-title h2::after{
+    text-align: center;
+    display: block;
+    width: 100px;
+    border:2px solid #dc4424;
+    margin: 0 auto;
+    content: '';
+ }
+ .section-title::after{
+    text-align: center;
+    display: block;
+    width: 100px;
+    border:2px solid #dc4424;
+    margin: 0 auto;
+    content: '';
+ }
+.left-title h2::after{
+    display: block;
+    width: 100px;
+    border:2px solid #dc4424;
+    content: '';
+ }
+
+.left-center {
+    margin-left: 10%
+}
+/* structure */
+.bloc-content{
+    width:50%;
+}
+.line i, .line div{
+    display: inline-block
+}
+.line i {
+    text-align: center;
+
+}
+/*.line div{
+  
+}*/
+.item{
+    padding: 1%;
+}
+
+/*************************************/
+/**** responsive : flex column *****/
+/*************************************/
+@media all and (max-width: 768px){
+    .center-content{
+        width:95%
+    }
+    .flex-box-simple, .flex-box, .flex-box-portfolio, .flex-box-partners {
+        display: -webkit-flex; 
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .bloc-content{
+        width:100%;
+        /*border:10px solid #d05a6f*/
+    }
+
+    .left-center {
+        margin-left: auto
+    }
+
+    h2.section-title 
+ {       text-align: center;
+        width: 100%
+    }
+    .hover-portfolio img {
+        width: 70%
+    }
+    .item {
+        flex-direction: row;
+
+    }
+
+    img.cut {
+        display: none;
+    }
+
+    .hover-portfolio {
+        width: 70%;
+        margin: 0 auto
+    }
+}
+
+/**** HEADER *****/
+
+.header-area{
+    width:100%;
+    background:url(img/bg/hero-bg.jpg) no-repeat;
+    background-size: cover; 
+    height:650px;
+}
+.header-area h1{
+    width:100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: #cecece;
+    text-shadow: 2px 0 #dc4424;
+}
+.header-area h1:hover{
+    color: #dc4424
+}
+.header-area nav ul{
+    display: flex;
+    margin: 0 auto;
+    width:100%;
+}
+.header-area ul li {
+    margin: 8px;
+}
+li a {
+    text-decoration: none;
+    color: #dc4424;
+    font-size: 18px
+}
+li a:hover{
+    border-top: 1px solid #dc4424;
+    border-bottom: 1px solid #dc4424;
+}
+header div.flex-box{
+    flex-direction: column;
+}
+header div h2, header div h3 {
+    margin-top: 100px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #ff8647;
+    font-family: 'Montserrat', sans-serif
+}
+header div h2{
+     font-size: 80px;
+}
+header div h3 {
+    font-size: 42px
+}
+/**** PART 1 skills *****/
+
+
+
+    
+/**** PART 2  what we do *****/
+
+.media-heading {
+    font-size: 18px;
+    color: #dc4424;
+    text-align: center;
+}
+
+#wedo h3{
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.line {
+    text-align: center;
+}
+
+.sous-line {
+    margin-bottom: 0px
+}
+
+/**** PART 3 people  *****/
+
+div.whatsay-img img {
+    border-radius: 200px 200px;
+    margin-left: 10%;
+    height: 150px;
+}
+
+div.whatsay-img {
+    text-align: center;
+}
+
+/**** PART 4 portfolio  *****/
+.partners-carousel{
+    background:#d05a6f
+}
+
+section.partners {
+    background: #cecece
+}
+
+a.load{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff
+}
+
+div.loading {
+    margin-top: 20px
+    margin-bottom: 50px
+}
+
+button.load-more {
+    margin-left: 45%;
+}
+
+/**** PART 5 pricing *****/
+
+section.pricing {
+    border: #cecece 2px solid
+}
+.bloc-content-three{
+   width: 35%;
+}
+.pricing-table{
+    padding: 2%;
+    box-shadow: 1px 1px 1px #dbdbdb;
+}
+h2.section-title {
+    color: #cecece
+}
+p.sub-title {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif ;
+    margin-top: 10px
+}
+div.pricing-buttons button, button.load-more {
+    background: #cecece;
+    border: 2px solid #cecece;
+    border-radius: 40px 40px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 15px
+}
+
+div.pricing-buttons button {
+    margin-left: 70%
+}
+
+div.pricing-buttons button:hover, button.load-more:hover{
+    background: #ff8647;
+    border: #ff8647 2px solid
+}
+.package-item h3, .package-item h4{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif
+}
+.package-item ul{
+    text-align: center;
+}
+
+.package-item ul li {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px
+}
+
+
+/**** PART 6 .counter*****/
+.counter{
+    background:#cecece;
+    color: #FFF;
+    margin:0;
+}
+
+span.timer{
+    font-size: 30px;
+    font-weight: 700;
+    color: #a1a1a1;
+    font-family: 'Raleway', sans-serif
+}
+
+span.count-description{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif
+}
+
+/**** PART 7 *****/
+/**** PART 8 *****/
+
+/**** CONTACT *****/
+section.contact-us-section{
+    background: linear-gradient(60deg,rgba(206,206,206,0.5), 
+        rgba(206,206,206,0.5)), url(img/awards-pattern.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+h2.contact-title, h2.section-title {
+    display: inline-block;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+h2.contact-title{
+        color: #fff;
+}
+section.contact-us-section p{
+    color: #fff
+}
+form{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px
+}
+section.contact-us-section i {
+    color: #fff
+}
+input, textarea {
+    margin-top: 5px;
+    width: 25%
+}
+::placeholder{
+    text-align: center;
+}
+section.contact-us-section button {
+    background: #cecece;
+    width: 5%;
+    border: 2px solid #cecece;
+    border-radius: 40px 40px;
+    margin-top: 10px;
+    color: #fff;
+}
+section.contact-us-section button:hover{
+    background: #ff8647;
+    border: #ff8647 2px solid
+}
+/**** MAP *****/
+.google-map-section{
+     background: linear-gradient(60deg,rgba(206,206,206,0.5), 
+        rgba(206,206,206,0.5)), url(img/awards-pattern1.jpg) no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0
+}
+iframe {
+    width: 100%
+}
+/**** FOOTER *****/
+
+footer {
+    background: #cecece;
+    height: 80px;
+}
+
+div.copyright-info{
+    padding-top: 10px
+}
+
+div.copyright-info a{
+    text-decoration: none;
+    color: #fff
+}
+
+div.social-icons i{
+    color: #fff
+}
+div.social-icons i:hover{
+    color: #dc4424
+}
